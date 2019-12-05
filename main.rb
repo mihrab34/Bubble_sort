@@ -1,4 +1,6 @@
-def bubbleSort (arr)
+# frozen_string_literal: true
+
+def bubble_sort(arr)
   num = arr.length
     
   loop do
@@ -14,9 +16,9 @@ def bubbleSort (arr)
   arr
 end
 
-bubbleSort([4, 3, 78, 2, 0, 2]) # =>[0,2,2,3,4,78]
+bubble_sort([4, 3, 78, 2, 0, 2]) # =>[0,2,2,3,4,78]
 
-def bubble_sort_by (arr)
+def bubble_sort_by(arr)
   num = arr.length
 
   loop do
