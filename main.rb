@@ -1,33 +1,33 @@
-def bubbleSort arr
+def bubbleSort (arr)
   num = arr.length
     
   loop do
     sorted = false
-    (num-1).times do |i|
+    (num - 1).times do |i|
       if arr[i] > arr[i + 1]
         arr[i], arr[i + 1] = arr[i + 1], arr[i]
         sorted = true
       end
     end
-  break if not sorted
+    break unless sorted
   end
   arr
 end
 
 bubbleSort([4, 3, 78, 2, 0, 2]) # =>[0,2,2,3,4,78]
 
-def bubble_sort_by arr 
+def bubble_sort_by (arr)
   num = arr.length
 
   loop do
     sorted = false
-    (num-1).times do |i|
-      if yield(arr[i], arr[i+1]).positive?
+    (num - 1).times do |i|
+      if yield(arr[i], arr[i + 1]).positive?
         arr[i], arr[i + 1] = arr[i + 1], arr[i]
         sorted = true
       end
     end
-  break if not sorted
+    break unless sorted
   end
   arr
 end
