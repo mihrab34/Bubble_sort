@@ -14,7 +14,7 @@ def bubbleSort arr
       arr
     end
 
-bubbleSort([4,3,78,2,0,2])
+bubbleSort([4,3,78,2,0,2]) # =>[0,2,2,3,4,78]
 
 def bubble_sort_by arr
     num = arr.length
@@ -32,8 +32,10 @@ def bubble_sort_by arr
       arr
     end
 
-bubble_sort_by(["hi","hello","hey"]) do |left,right|
-  left.length - right.length
-end
+    bubble_sort_by(["hi","hello","hey"]) do |left,right|
+    left.length - right.length
+    end
+    #["hi", "hey", "hello"]
+
 
 
