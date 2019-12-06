@@ -34,8 +34,8 @@ def bubble_sort_by(arr)
   arr
 end
 
- x = bubble_sort_by %w[hi hello hey] do |left, right|
+x = bubble_sort_by %w[hi hello hey] do |left, right|
   left.length - right.length
 end
 
-p x  #=> ["hi", "hey", "hello"]
+p x #=> ["hi", "hey", "hello"]
